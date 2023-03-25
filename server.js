@@ -15,11 +15,11 @@ app.get('/', (req, res) => {
   res.end('LAKERS WON!');
 });
 
-app.post('/', (req, res) => {
-  res.statusCode = 200;
-  res.setHeader('Content-Type', 'text/plain');
-  res.end(`Received message: ${req.body.message}`);
-});
+// app.post('/', (req, res) => {
+//   res.statusCode = 200;
+//   res.setHeader('Content-Type', 'text/plain');
+//   res.end(`Received message: ${req.body.message}`);
+// });
 
 const server = http.createServer(app);
 
